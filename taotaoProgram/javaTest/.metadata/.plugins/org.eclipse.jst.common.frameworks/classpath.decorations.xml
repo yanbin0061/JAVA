@@ -1,0 +1,7 @@
+<classpath>
+  <container id="struts2_template_result!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="X:/taotaoProgram/javaTest/struts2_template_result/WebContent/WEB-INF/lib/struts2-core-2.3.15.3.jar">
+      <source-attachment-path>/2016year12math23/struts-2.3.15.3-all</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

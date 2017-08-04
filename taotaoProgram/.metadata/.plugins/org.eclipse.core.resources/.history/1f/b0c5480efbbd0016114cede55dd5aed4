@@ -1,0 +1,7 @@
+
+
+import com.taotao.pojo.TbItem;
+
+public interface ItemService2 {
+	TbItem getItemById(long itemId);
+}

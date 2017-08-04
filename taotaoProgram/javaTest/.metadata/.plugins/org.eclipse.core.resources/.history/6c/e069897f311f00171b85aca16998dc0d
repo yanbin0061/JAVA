@@ -1,0 +1,7 @@
+package com.hdu.web.action;
+
+import com.hdu.domain.Customer;
+
+public class CustomerAction extends Customer implements {
+
+}

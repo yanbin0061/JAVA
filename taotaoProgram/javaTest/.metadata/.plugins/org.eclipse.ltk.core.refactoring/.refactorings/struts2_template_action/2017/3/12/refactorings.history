@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Demo1Action.java&apos; to &apos;struts2_template_package/src/com.hdu.web.action&apos;&#x0D;&#x0A;- Original project: &apos;struts2_template_action&apos;&#x0D;&#x0A;- Destination element: &apos;struts2_template_package/src/com.hdu.web.action&apos;&#x0D;&#x0A;- Original element: &apos;com.hdu.web.action.Demo1Action.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=struts2_template_package/src&lt;com.hdu.web.action" element1="/src&lt;com.hdu.web.action{Demo1Action.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1490009478072" units="1" version="1.0"/>
+</session>

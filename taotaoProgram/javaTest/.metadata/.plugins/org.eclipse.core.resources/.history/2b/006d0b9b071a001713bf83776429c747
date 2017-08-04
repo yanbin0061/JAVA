@@ -1,0 +1,40 @@
+package com.hdu.web.action;
+
+import com.hdu.domain.User;
+import com.hdu.service.IUserService;
+import com.hdu.service.impl.UserServiceImpl;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+
+/**
+ * 用户相关的操作类
+ * @author Administrator
+ *
+ */
+public class UserAction extends ActionSupport implements ModelDriven<User> {
+	private IUserService service = new UserServiceImpl();
+	//定义一个用户的数据模型
+	private User user = new User();
+	@Override
+	public User getModel() {
+		// TODO Auto-generated method stub
+		return user;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public String register(){
+		User dbUser = service.findUserByUsername(user.getUsername());
+		if (dbUser!=null) {
+			return "exists";
+		}
+		int res = service.register(user);
+		if (res>0) {
+			return SUCCESS;
+		}
+		return NONE;
+	}
+}

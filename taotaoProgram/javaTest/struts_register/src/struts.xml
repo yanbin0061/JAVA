@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"/>
+	<package name="p1" extends="struts-default">
+		<action name="register" class="com.hdu.web.action.UserAction" method="register" >
+			<result type="redirect">/success.jsp</result><!-- 当注册成功之后重定向的结果视图 -->
+			<result name="exists">/message.jsp</result><!-- 当用户名已经存在之后，转向的结果视图 -->
+			<!-- 当出问题之后，需要回到登陆或者注册界面 -->
+			<result name="input">/register1.jsp</result>
+		</action>
+		<action name="findAll" class="com.hdu.web.action.UserAction" method="findAll">
+		    <result name="findall">/findall.jsp</result>
+		</action>
+		<!-- 声明式验证器案例的动作类配置 -->
+		<action name="addStudent" class="com.hdu.web.action.StudentAction" method="addStudent">
+		    <result name="input">/student.jsp</result>
+		    <result>/success.jsp</result>
+		</action>
+	</package>
+</struts>

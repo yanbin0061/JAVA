@@ -1,0 +1,7 @@
+package com.hdu.dao.impl;
+
+import com.hdu.dao.IUserDao;
+
+public class IUserDaoImpl implements IUserDao {
+
+}

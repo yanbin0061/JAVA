@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="0" key="passwordStores.location.y"/>
+	<item value="627" key="passwordStores.size.y"/>
+	<item value="0" key="passwordStores.location.x"/>
+	<item value="1600" key="passwordStores.size.x"/>
+	<item value="497" key="ChooseUrlDialog.size.x"/>
+	<item value="377" key="ChooseUrlDialog.size.y"/>
+	<item value="919" key="ChooseUrlDialog.location.x"/>
+	<item value="199" key="ChooseUrlDialog.location.y"/>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="https://LS--20151110WTV/svn/taotao/"/>
+			<item value="https://ls--20151110wtv/svn/taotao/"/>
+		</list>
+	</section>
+</section>

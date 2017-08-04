@@ -1,0 +1,7 @@
+package com.taotao.service;
+
+import com.taotao.pojo.TbItem;
+
+public class ItemService {
+	TbItem getItemById(long itemId);
+}

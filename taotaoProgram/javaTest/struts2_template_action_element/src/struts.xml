@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+     "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts> 
+    <constant name="struts.devMode" value="true"></constant>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+    <package name="p1" extends="struts-default">
+        <!-- 修改默认的动作类：我们一般不修改 -->
+        <!--  
+        <default-class-ref class="自己写的类"></default-class-ref>
+        -->
+        <!-- action元素：是用于定义动作名称，动作类和动作方法的映射，以及出现不同情况时前往指定的结果视图
+                 name属性:动作名称，和jsp页面上的请求url中的名称对应，此处不能写.action
+                 class属性:指定动作类
+                 method属性:指定要执行的动作方法
+         -->
+        
+        <action name="action1" class="com.hdu.web.action.Demo1Action" method="hello">
+            <result name="success">/success.jsp</result>
+        </action>
+        <!-- 第三种创建动作类方式的配置 -->
+        <action name="action3" class="com.hdu.web.action.Demo3Action">
+            <result name="success">/success.jsp</result>
+        </action>
+        <!-- 访问默认动作类和动作方法的配置 
+                                       默认的动作类是ActionSupport的类，它是在struts-default.xml的配置文件中被定义的。
+        -->
+        <action name="defaultAction">
+            <result name="success">/success.jsp</result>
+        </action>
+        <!-- 创建动作方法调用的配置 -->
+        <!--
+        <action name="addUser" class="com.hdu.web.action.UserAction" method="addUser">
+            <result name="addUser">/addUser.jsp</result>
+        </action>
+        <action name="deleteUser" class="com.hdu.web.action.UserAction" method="deleteUser">
+            <result name="deleteUser">/deleteUser.jsp</result>
+        </action>
+        <action name="updateUser" class="com.hdu.web.action.UserAction" method="updateUser">
+            <result name="updateUser">/updateUser.jsp</result>
+        </action>
+        <action name="findUser" class="com.hdu.web.action.UserAction" method="findUser">
+            <result name="findUser">/findUser.jsp</result>
+        </action>
+        -->
+        <!-- 使用通配符配置动作方法 
+              *表示动作的名称，当有和动作名称相匹配的时候可以用{出现的位置}来代替
+        
+        <action name="*_*" class="com.hdu.web.action.{2}Action" method="{1}{2}">
+            <result name="success">/{1}{2}.jsp</result>
+        </action>
+        -->
+        <!-- 使用动态代理配置动作方法 -->
+        <action name="user" class="com.hdu.web.action.UserAction">
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+</struts>

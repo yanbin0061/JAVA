@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+     "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts> 
+    <!-- 修改struts中default.properties定义的常量，作用:修改后不需要重启服务器 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 修改struts中默认的后缀名 -->
+    <constant name="struts.action.extension" value="do"></constant>
+    <package name="p1" extends="struts-default">
+        <action name="action1" class="com.hdu.web.action.DemoAction" method="sayHello">
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+</struts>

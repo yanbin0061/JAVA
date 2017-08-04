@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+     "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts> 
+    <!-- 设置开发模式 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 
+        package元素：是定义一个struts的包，它是把配置文件按照面向对象的思想来管理，分模块开发
+            name属性：指定包的名称。注意：包的名称在配置文件中唯一。
+            extends属性:指定当前包的父包，它是按照面向对象的思想管理的体现。
+            abstract属性：把包声明为一个抽象包，抽象包是用来被继承的，只有没有action元素的包才能被定义为抽象包
+            namespace属性：名称空间，当指定了名称空间后，访问路径就变成了：
+                                                访问路径 = 名称空间+动作名称
+                                                当不指定该属性时，该属性有默认值，默认值是“”，不是“/”
+                
+     -->   
+      <package name="p1" extends="struts-default" namespace="/user">
+          <action name="action1" class="com.hdu.web.action.Demo1Action" method="saveUser">
+              <result name="success">/success.jsp</result>
+          </action>
+      </package>
+      <package name="p2" extends="struts-default" >
+          <action name="action2" class="com.hdu.web.action.Demo1Action" method="saveUser1">
+              <result name="success">/success.jsp</result>
+          </action>
+      </package>
+</struts>

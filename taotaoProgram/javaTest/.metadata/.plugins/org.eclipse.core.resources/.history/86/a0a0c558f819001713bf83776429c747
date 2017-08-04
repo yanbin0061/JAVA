@@ -1,0 +1,18 @@
+package com.hdu.dao.impl;
+
+import com.hdu.dao.IUserDao;
+import com.hdu.domain.User;
+
+public class IUserDaoImpl implements IUserDao {
+
+	@Override
+	public User selectUserByUsername(String username) {
+		return null;
+	}
+
+	@Override
+	public int addUser(User user) {
+		return 0;
+	}
+
+}

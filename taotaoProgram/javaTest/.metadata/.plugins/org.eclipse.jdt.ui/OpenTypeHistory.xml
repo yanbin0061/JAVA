@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=struts2_template_result/X:\/taotaoProgram\/javaTest\/struts2_template_result\/WebContent\/WEB-INF\/lib\/struts2-core-2.3.15.3.jar&lt;org.apache.struts2.dispatcher(StrutsResultSupport.class[StrutsResultSupport" modifiers="1057" timestamp="1488805971262"/>
+<typeInfo handle="=struts2_template_param/X:\/taotaoProgram\/javaTest\/struts2_template_param\/WebContent\/WEB-INF\/lib\/xwork-core-2.3.15.3.jar&lt;com.opensymphony.xwork2(ActionSupport.class[ActionSupport" modifiers="33" timestamp="1488805989960"/>
+<typeInfo handle="=struts2_template_register/X:\/taotaoProgram\/javaTest\/struts2_template_register\/WebContent\/WEB-INF\/lib\/xwork-core-2.3.15.3.jar&lt;com.opensymphony.xwork2(ActionSupport.class[ActionSupport" modifiers="33" timestamp="1488805989960"/>
+<typeInfo handle="=struts2_template_register/X:\/taotaoProgram\/javaTest\/struts2_template_register\/WebContent\/WEB-INF\/lib\/xwork-core-2.3.15.3.jar&lt;com.opensymphony.xwork2(ModelDriven.class[ModelDriven" modifiers="1537" timestamp="1488805989960"/>
+<typeInfo handle="=struts_register/src&lt;com.hdu.service{IUserService.java[IUserService" modifiers="513" timestamp="1491391700641"/>
+<typeInfo handle="=struts_register/X:\/taotaoProgram\/javaTest\/struts_register\/WebContent\/WEB-INF\/lib\/xwork-core-2.3.15.3.jar&lt;com.opensymphony.xwork2(ActionSupport.class[ActionSupport" modifiers="33" timestamp="1445908162384"/>
+<typeInfo handle="=struts_register/X:\/taotaoProgram\/javaTest\/struts_register\/WebContent\/WEB-INF\/lib\/xwork-core-2.3.15.3.jar&lt;com.opensymphony.xwork2(ModelDriven.class[ModelDriven" modifiers="1537" timestamp="1445908162384"/>
+<typeInfo handle="=struts_register/X:\/taotaoProgram\/javaTest\/struts_register\/WebContent\/WEB-INF\/lib\/struts2-core-2.3.15.3.jar&lt;org.apache.struts2.util(StrutsTypeConverter.class[StrutsTypeConverter" modifiers="1057" timestamp="1445908162360"/>
+</typeInfoHistroy>

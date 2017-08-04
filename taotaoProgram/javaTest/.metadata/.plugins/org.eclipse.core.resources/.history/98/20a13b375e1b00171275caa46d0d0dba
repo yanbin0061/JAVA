@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+          "-//Apache Struts//XWork Validator 1.0.3//EN"
+          "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<!-- 当时用ActionClassName-validation.xml来命名文件时，它是一个动作类验证器，会验证动作类中的所有方法 -->
+<!-- 第二种是使用ActionClassName-ActionName-validation.xml ，ActionName是struts中的name名称，验证动作名称的动作类-->
+<validators>
+    <!-- 基于字段的声明式验证 -->
+    <!-- field中name属性指定的是表单name属性的取值 -->
+    <field name="username">
+        <!-- struts2框架为我们集成了很多内置验证器，requiredstring会验证输入的内容是否为空，是否为空字符串，并去掉左右空格 -->
+        <field-validator type="requiredstring">
+            <message> 用户名不能为空，或者空字符串</message>
+        </field-validator>
+    </field>
+    <validator type="requiredstring">
+        <!-- 以注入的方式提供要验证要验证的信息 
+        setFieldName("password");
+        -->
+        <param name="fieldName">password</param>
+        <message>密码必须输入</message>
+    </validator>
+</validators>

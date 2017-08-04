@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <public publicId="-//mybatis.org//DTD Config 3.0//EN" uri="file:///D:/传智播客/07.开发环境/03.环境配置/mybatis3-dtd/mybatis-3-config.dtd"/>
+  <public publicId="-//mybatis.org//DTD Mapper 3.0//EN" uri="file:///D:/传智播客/07.开发环境/03.环境配置/mybatis3-dtd/mybatis-3-mapper.dtd"/>
+  <system systemId="http://www.springframework.org/schema/aop/spring-aop-4.0.xsd" uri="file:///D:/传智播客/07.开发环境/03.环境配置/spring4.1约束/spring-aop-4.0.xsd"/>
+  <system systemId="http://www.springframework.org/schema/beans/spring-beans-4.0.xsd" uri="file:///D:/传智播客/07.开发环境/03.环境配置/spring4.1约束/spring-beans-4.0.xsd"/>
+  <system systemId="http://www.springframework.org/schema/context/spring-context-4.0.xsd" uri="file:///D:/传智播客/07.开发环境/03.环境配置/spring4.1约束/spring-context-4.0.xsd"/>
+  <system systemId="http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd" uri="file:///D:/传智播客/07.开发环境/03.环境配置/spring4.1约束/spring-mvc-4.0.xsd"/>
+  <system systemId="http://www.springframework.org/schema/tx/spring-tx-4.0.xsd" uri="file:///D:/传智播客/07.开发环境/03.环境配置/spring4.1约束/spring-tx-4.0.xsd"/>
+  <system systemId="http://www.springframework.org/schema/util/spring-util-4.0.xsd" uri="file:///D:/传智播客/07.开发环境/03.环境配置/spring4.1约束/spring-util-4.0.xsd"/>
+</catalog>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;case0.txt&apos; to &apos;readfile&apos;&#x0D;&#x0A;- Original project: &apos;huawei_coding&apos;&#x0D;&#x0A;- Destination element: &apos;readfile&apos;&#x0D;&#x0A;- Original element: &apos;case0.txt&apos;" description="Copy file" destination="=readfile" element1="case0.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1490945455503" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+     "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.devMode" value="true"></constant>
+    <package name="p1" extends="struts-default">
+        <action name="action1" class="com.hdu.web.action.Demo1Action">
+            <!--result元素：配置逻辑结果视图
+                   name属性：与动作方法的返回值对应，当一致前往指定的jsp 
+                   type属性:结果视图类型。不写的时候，有默认值，默认值是dispatcher转发
+                                                                   常用取值：
+                          dispatcher：请求转发，默认值
+                          redirect：重定向
+                          chain：转发到另一个动作
+                                                                                             转发到同一个包（同名称空间）下的动作方法
+                                                                                             转发到同一个包（不同名称空间）下的动作方法
+                          redirectAction：重定向到另一个动作
+                                                                                             转发到同一个包（同名称空间）下的动作方法
+                                                                                             转发到同一个包（不同名称空间）下的动作方法
+             -->
+             <!--  同包下的转发与重定向
+            <result name="success" type="redirectAction">action2</result>
+            -->
+            <!-- 不同包下的转发与重定向 -->
+            <result name="success" type="redirectAction">
+                <!--
+                                                           使用的是注入的思想，在执行重定向之前，会先获取这两个参数值
+                                                          调用的就是setNamespace(namespace)和setActionName(actionName) 
+                 -->
+                <param name="namespace">/n2</param>
+                <param name="actionName">action3</param>
+            </result>
+        </action>
+        <action name="action2">
+            <result name="success">
+                <param name="location">/success.jsp</param>
+            </result>
+        </action>
+    </package> 
+    <package name="p2" extends="struts-default" namespace="/n2">
+        <action name="action3" >
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+    
+    <!--全局结果视图  -->
+    <package name="myDefault" extends="struts-default">
+        <result-types>
+            <result-type name="captcha" class="com.hdu.web.action.result.CAPTCHAResult"></result-type>
+        </result-types>
+        <global-results>
+            <!-- 结果视图的查找顺序，先找当前动作类自己的，如果没有，再去全局结果视图中查找 -->
+            <result name="success" type="captcha">
+                <!-- 设置图像的大小 -->
+                <param name="width">280</param>
+                <param name="height">100</param>
+            </result>
+        </global-results>
+    </package>
+    
+    <!-- 自定义结果类型的配置 -->
+    <package name="p3" extends="myDefault">
+        <!-- 自定义结果类型 
+                                       在包中配置的结果视图，是只能当前包和其自包中使用
+       
+        <result-types>
+            <result-type name="captcha" class="com.hdu.web.action.result.CAPTCHAResult"></result-type>
+        </result-types>
+         -->
+        <action name="captchaAction" class="com.hdu.web.action.CaptchaAction">
+            <!--  
+            <result name="success" type="captcha">
+                                                     设置图像的大小
+                <param name="width">280</param>
+                <param name="height">80</param>
+            </result>
+            -->
+        </action>
+    </package>
+</struts>
